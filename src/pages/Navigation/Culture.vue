@@ -58,12 +58,10 @@ export default {
         bottom: 1rem;
         z-index: -3;
      }
-     /deep/ .van-tab{
-        font-size: .35rem;
+         /deep/ .van-tab{
+         font-size: .4rem!important;
         }
-         /deep/.van-tab--active{
-           color:red;
-       }
+        
         /deep/.van-tabs__line{
           background: none;
          }
@@ -81,5 +79,9 @@ export default {
         /deep/.van-tabs__wrap--scrollable .van-tab{
             flex: 0;
         }
+         /deep/.van-tab--active{
+           color:red;
+       }
+     
 </style>
 
