@@ -6,12 +6,11 @@ import router from './router'
 import Vant from 'vant';
 import 'vant/lib/index.css';
 Vue.use(Vant);
-
 import { Carousel,CarouselItem  } from 'element-ui';
-
-
 Vue.component(Carousel.name, Carousel);
 Vue.component(CarouselItem.name, CarouselItem);
+import Axios  from 'axios'
+Vue.prototype.$axios = Axios
 
 import fastClick from 'fastclick'
 fastClick.attach(document.body)

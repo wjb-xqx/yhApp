@@ -1,36 +1,21 @@
 <template>
     <div class="Celebrity">
-         <index-header></index-header>
-        <nav-list></nav-list>
         <navi-banner></navi-banner>
         <div class="content">
              <celebrity-nav></celebrity-nav>
-             <person-introduce></person-introduce>
         </div>
-        <love-donation></love-donation>
-       <index-footer></index-footer>
     </div>
 </template>
 
 <script>
-import IndexHeader from "../../common/Header"
-import NavList from "../../common/NavList"
-import IndexFooter from "../../common/Footer"
 import NaviBanner from "../../common/NaviBanner"
 import CelebrityNav from "./components/CelebrityNav"
-import LoveDonation from "../../common/LoveDonation"
-import PersonIntroduce from "../../common/PersonIntroduce"
 
 export default {
   name:"Celebrity",
     components:{
-        IndexHeader,
-        NavList,
         NaviBanner,
         CelebrityNav,
-       LoveDonation,
-       PersonIntroduce,
-        IndexFooter
     }
 }
 </script>

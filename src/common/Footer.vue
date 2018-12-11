@@ -1,7 +1,7 @@
 <template>
     <div class="footer">
         <ul class="footer-tab">
-            <router-link to="/" class="item">
+            <router-link to="/home" class="item">
                 <img src="@/assets/images/home.png" alt="">
                 <span>首页</span>
             </router-link>

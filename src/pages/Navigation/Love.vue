@@ -1,27 +1,21 @@
 <template>
     <div class="Love clearfix">
-       <index-header></index-header>
-       <nav-list></nav-list>
         <navi-banner></navi-banner>
         <div class="content">
             <love-money></love-money>
+             <love-list></love-list>
             <love-detailed></love-detailed>
             <income-info></income-info>
         </div>
-        <love-donation></love-donation>
-       <index-footer></index-footer>
     </div>
 </template>
 
 <script>
-import IndexHeader from "../../common/Header"
-import NavList from "../../common/NavList"
-import IndexFooter from "../../common/Footer"
 import NaviBanner from "../../common/NaviBanner"
 import LoveMoney from "../../common/LoveMoney"
 import LoveDetailed from "./components/LoveDetailed"
+import LoveList from "./components/LoveList"
 import IncomeInfo from "../../common/IncomeInfo"
-import LoveDonation from "../../common/LoveDonation"
 export default {
     name:"Love",
       data() {
@@ -30,14 +24,11 @@ export default {
             };
     },
     components:{
-        IndexHeader,
-        NavList,
         NaviBanner,
-        LoveDonation,
         LoveMoney,
         LoveDetailed,
+        LoveList,
         IncomeInfo,
-        IndexFooter
     }
 }
 </script>

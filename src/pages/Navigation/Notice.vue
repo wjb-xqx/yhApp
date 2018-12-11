@@ -1,28 +1,19 @@
 <template>
     <div class="Navigation clearfix">
-       <index-header></index-header>
-       <nav-list></nav-list>
         <navi-banner></navi-banner>
         <div class="content">
             <index-public></index-public>
             <no-friendship></no-friendship>
             <notice-info></notice-info>
         </div>
-        <love-donation></love-donation>
-       <index-footer></index-footer>
     </div>
 </template>
 
 <script>
-import IndexHeader from "../../common/Header"
-import NavList from "../../common/NavList"
-import IndexFooter from "../../common/Footer"
 import NaviBanner from "../../common/NaviBanner"
 import IndexPublic from "../../common/IndexPublic"
 import NoFriendship from "./components/NoFriendship"
 import NoticeInfo from "./components/NoticeInfo"
-
-import LoveDonation from "../../common/LoveDonation"
 export default {
     name:"Notice",
       data() {
@@ -31,14 +22,10 @@ export default {
             };
     },
     components:{
-        IndexHeader,
-        NavList,
         NaviBanner,
-        LoveDonation,
         IndexPublic,
         NoFriendship,
         NoticeInfo,
-        IndexFooter
     }
 }
 </script>

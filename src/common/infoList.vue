@@ -99,5 +99,8 @@ export default {
           }
       }
         }
+    /deep/element.style{
+         transition-duration:0;
+    }
 </style>
 

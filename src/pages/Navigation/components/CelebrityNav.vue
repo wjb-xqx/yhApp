@@ -1,39 +1,36 @@
 <template>
     <div class="celebrityNav">
          <van-tabs >
-            <van-tab :title="item.title" v-for="(item,index) in List" :key="index">
-                
+             <!-- v-model="active" -->
+            <van-tab title="家族长老">
+               <person-introduce></person-introduce>
+            </van-tab>
+            <van-tab title="家族栋梁">
+               内容 3
+            </van-tab>
+            <van-tab title="组织结构">
+                 <Organization></Organization>
+            </van-tab>
+            <van-tab title="族长">
+                内容 4
             </van-tab>
         </van-tabs>
     </div>
 </template>
 
 <script>
+import Organization from '../../JobRank/Organization'
+import PersonIntroduce from "../../../common/PersonIntroduce"
 export default {
     name:"CelebrityNav",
     data(){
         return{
-            List:[
-                {
-                    id:"0001",
-                    title:"家族长老",
-                    // content:'111'
-                },{
-                    id:"0002",
-                    title:"家族结构"
-                },{
-                    id:"0003",
-                    title:"家族结构"
-                },{
-                    id:"0004",
-                    title:"家族结构"
-                },{
-                    id:"0005",
-                    title:"族长"
-                }
-                
-            ]
+            
         }
+    },
+    components:{
+        Organization,
+        PersonIntroduce
     }
 }
 </script>

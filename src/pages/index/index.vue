@@ -30,7 +30,7 @@ import IndexFund from "./components/IndexFund"
 import IndexList from "./components/IndexList"
 import infoList from "../../common/infoList"
 import PersonIntroduce from "../../common/PersonIntroduce"
-// import BScroll from 'better-scroll'
+import BScroll from 'better-scroll'
 export default {
     name:"index",
     components:{
@@ -46,7 +46,17 @@ export default {
         infoList,
         PersonIntroduce,
         IndexFooter
-    }
+    },
+    created(){
+            this.$axios.post("http://192.168.2.179:8090/swagger-ui.html#!/fan45index45menu45controller/getIndexMenuBySiteIdUsingGET")
+            .then(res=>{
+              console.log(res.data)
+            //   this.names=res.data.banner
+            })
+            .catch(error=>{
+              console.log(error)
+            })
+         }
 }
 </script>
 

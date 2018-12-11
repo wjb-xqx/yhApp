@@ -1,22 +1,14 @@
 <template>
     <div class="Navigation clearfix">
-       <index-header></index-header>
-       <nav-list></nav-list>
-        <navi-banner></navi-banner>
+        <navi-banner></navi-banner> 
         <div class="content">
             <vedio-list></vedio-list>
         </div>
-        <love-donation></love-donation>
-       <index-footer></index-footer>
     </div>
 </template>
 
 <script>
-import IndexHeader from "../../common/Header"
-import NavList from "../../common/NavList"
-import IndexFooter from "../../common/Footer"
 import NaviBanner from "../../common/NaviBanner"
-import LoveDonation from "../../common/LoveDonation"
 import VedioList from "./components/VedioList"
 
 export default {
@@ -27,12 +19,8 @@ export default {
             };
     },
     components:{
-        IndexHeader,
-        NavList,
         NaviBanner,
-        LoveDonation,
        VedioList,
-        IndexFooter
     }
 }
 </script>

@@ -2,8 +2,10 @@
     <div class="indexList clearfix">
         <ul>
             <div class="item" v-for="(item,index) in list" :key="index">
-                <img :src="item.Url" alt="">
-                <p>{{item.desc}}</p>
+               <router-link to="/IndustryDynamics" tag="div">
+                    <img :src="item.Url" alt="">
+                     <p>{{item.desc}}</p>
+               </router-link>
             </div>
         </ul>
     </div>
@@ -17,35 +19,35 @@ export default {
             list:[{
                 id:"0001",
                 Url:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544366615407&di=42fee4660fc703f5869ae1d111c266cc&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F8326cffc1e178a8213ed079dfd03738da977e83e.jpg",
-                desc:"家族公共"
+                desc:"家族公告"
             },{
                 id:"0002",
                 Url:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544366615407&di=42fee4660fc703f5869ae1d111c266cc&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F8326cffc1e178a8213ed079dfd03738da977e83e.jpg",
-                desc:"家族公共"
+                desc:"家族动态"
             },{
                 id:"0003",
                Url:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544366615407&di=42fee4660fc703f5869ae1d111c266cc&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F8326cffc1e178a8213ed079dfd03738da977e83e.jpg",
-                desc:"家族公共"
+                desc:"慈善公益"
             },{
                 id:"0004",
                Url:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544366615407&di=42fee4660fc703f5869ae1d111c266cc&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F8326cffc1e178a8213ed079dfd03738da977e83e.jpg",
-                desc:"家族公共"
+                desc:"家族文化"
             },{
                 id:"0005",
                Url:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544366615407&di=42fee4660fc703f5869ae1d111c266cc&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F8326cffc1e178a8213ed079dfd03738da977e83e.jpg",
-                desc:"家族公共"
+                desc:"家族产业"
             },{
                 id:"0006",
                Url:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544366615407&di=42fee4660fc703f5869ae1d111c266cc&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F8326cffc1e178a8213ed079dfd03738da977e83e.jpg",
-                desc:"家族公共"
+                desc:"家族名人"
             },{
                 id:"0007",
                 Url:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544366615407&di=42fee4660fc703f5869ae1d111c266cc&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F8326cffc1e178a8213ed079dfd03738da977e83e.jpg",
-                desc:"家族公共"
+                desc:"家族分支"
             },{
                 id:"0008",
                Url:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544366615407&di=42fee4660fc703f5869ae1d111c266cc&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F8326cffc1e178a8213ed079dfd03738da977e83e.jpg",
-                desc:"家族公共"
+                desc:"家族视频"
             }]
         }
     }
@@ -66,7 +68,7 @@ export default {
              float: left;
              padding: .3rem;
              box-sizing: border-box;
-             >img{
+             img{
                  width: 1rem;
              }
          }

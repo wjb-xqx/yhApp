@@ -1,29 +1,23 @@
 <template>
     <div class="Navigation clearfix">
-       <index-header></index-header>
-       <nav-list></nav-list>
         <navi-banner></navi-banner>
         <div class="content">
             <van-tabs v-model="active">
-            <van-tab title="家族祠堂"></van-tab>
-            <van-tab title="源流"></van-tab>
-            <van-tab title="序"></van-tab>
-            <van-tab title="宗规族约"></van-tab>
-            <van-tab title="传说典故"> </van-tab>
+            <van-tab title="家族祠堂">
+                <info-list></info-list>
+            </van-tab>
+            <van-tab title="源流">2</van-tab>
+            <van-tab title="序">3</van-tab>
+            <van-tab title="宗规族约">4</van-tab>
+            <van-tab title="传说典故"> 5</van-tab>
         </van-tabs>
-        <info-list></info-list>
+        
         </div>
-        <love-donation></love-donation>
-       <index-footer></index-footer>
     </div>
 </template>
 
 <script>
-import IndexHeader from "../../common/Header"
-import NavList from "../../common/NavList"
-import IndexFooter from "../../common/Footer"
 import NaviBanner from "../../common/NaviBanner"
-import LoveDonation from "../../common/LoveDonation"
 import infoList from "../../common/infoList"
 
 export default {
@@ -34,12 +28,8 @@ export default {
             };
     },
     components:{
-        IndexHeader,
-        NavList,
         NaviBanner,
-        LoveDonation,
-        infoList,
-        IndexFooter
+        infoList
     }
 }
 </script>
@@ -59,7 +49,7 @@ export default {
         z-index: -3;
      }
          /deep/ .van-tab{
-         font-size: .4rem!important;
+         font-size: .3rem!important;
         }
         
         /deep/.van-tabs__line{

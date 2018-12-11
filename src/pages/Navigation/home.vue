@@ -1,17 +1,18 @@
 <template>
     <div class="Navigation clearfix">
-        <navi-banner></navi-banner>
-        <div class="content">
-             <navi-content></navi-content>
-             <info-list></info-list>
-        </div>
+       <index-header></index-header>
+       <nav-list></nav-list>
+        <router-view></router-view>
+        <love-donation></love-donation>
+       <index-footer></index-footer>
     </div>
 </template>
 
 <script>
-import NaviBanner from "../../common/NaviBanner"
-import NaviContent from "./components/NaviContent"
-import infoList from "../../common/infoList"
+import IndexHeader from "../../common/Header"
+import NavList from "../../common/NavList"
+import IndexFooter from "../../common/Footer"
+import LoveDonation from "../../common/LoveDonation"
 export default {
     name:"IndustryDynamics",
       data() {
@@ -20,9 +21,10 @@ export default {
             };
     },
     components:{
-        NaviBanner,
-        NaviContent,
-        infoList,
+        IndexHeader,
+        NavList,
+        LoveDonation,
+        IndexFooter
     }
 }
 </script>
